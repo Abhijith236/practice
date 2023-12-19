@@ -1,12 +1,16 @@
 import React, { useEffect, useRef,useState } from 'react';
 import './Navbar.css';
 const Navbar=()=>{
-    const [isSticky, setSticky] = useState(false);
+  const [isSticky, setSticky] = useState(false);
+  const [bgColor, setBgColor] = useState('rgba(0, 0, 0, 0.8)');
 
   useEffect(() => {
     const handleScroll = () => {
       // Check the scroll position to determine whether to make the navbar sticky
       const isScrolled = window.scrollY > 50;
+      const newOpacity = Math.min(isScrolled / 50, 0.8); 
+      const newcolor = `rgba(0, 0, 0, ${newOpacity})`
+      setBgColor(newcolor);
       setSticky(isScrolled);
     };
 

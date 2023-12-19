@@ -9,7 +9,7 @@ import Workshop from './Components/Workshop';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Workshop />
+    <Workshop/>
   </React.StrictMode>
 );
 
