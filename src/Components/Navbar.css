@@ -1,0 +1,34 @@
+body{
+    height: 20vh;
+}
+
+.container{
+    height: 20vh;
+    width: 100%;
+    position: relative;
+}
+
+.navbar-items{
+    margin: 100px;
+    padding: 10px;
+    height: 50px;
+    position: sticky;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.navbar-links {
+    
+}
+
+.sticky {
+    top: 40px;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1000;
+  }

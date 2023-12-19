@@ -1,0 +1,56 @@
+
+.workshop_container{
+    height: 20vh;
+    margin: 100px;
+
+
+    
+}
+
+.workshop1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.workshop2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.workshop3{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.workshop4{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.workshop5{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 10vh;
+}
+
+button{
+    height: 50px;
+    width: 10%;
+}
+
+
+
+
+  
+
+
+
