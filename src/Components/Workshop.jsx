@@ -1,5 +1,6 @@
 import {React,useState} from 'react';
 import './Workshop.css';
+import './imgs/';
 
 
 const Workshop=()=>{
