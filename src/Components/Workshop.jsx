@@ -1,7 +1,10 @@
 import {React,useState} from 'react';
 import './Workshop.css';
-import './imgs/';
-
+import img1 from './imgs/1.png';
+import img2 from './imgs/2.png';
+import img3 from './imgs/3.png';
+import img4 from './imgs/4.png';
+import img5 from './imgs/5.png';
 
 const Workshop=()=>{
     const [isOpen, setIsOpen] = useState(false);
@@ -19,18 +22,24 @@ const Workshop=()=>{
             </div>
             <br />
             <div className='workshop'>
-                <img src="./1.png" alt="" />
+                <img src={img1} alt="" />
                 <div className='workshop_name'>
                     Brainwave Robotics Workshop
                 </div>
-                <button>
+                <button onClick={toggleCollapse}>
                     <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9042 9.32677C21.9042 8.92707 21.5802 8.60306 21.1805 8.60306C20.7808 8.60306 20.4568 8.92707 20.4568 9.32677V20.4237H9.36C8.96031 20.4237 8.63629 20.7477 8.63629 21.1474C8.63629 21.5471 8.96031 21.8711 9.36 21.8711H20.4568V32.968C20.4568 33.3677 20.7808 33.6917 21.1805 33.6917C21.5802 33.6917 21.9042 33.3677 21.9042 32.968V21.8711H33.0012C33.4009 21.8711 33.7249 21.5471 33.7249 21.1474C33.7249 20.7477 33.4009 20.4237 33.0012 20.4237H21.9042V9.32677Z" fill="#9D9FA2"/>
                     </svg>
                 </button>
             </div>
+            {isOpen &&
+                    <div className='collapse-content'>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, vel, iusto saepe beatae explicabo natus nisi voluptas, quibusdam commodi non assumenda consequuntur soluta sit id consectetur? Eaque ullam sed porro?
+                    </div>
+                
+                }
             <div className='workshop'>
-                <img src="./2.png" alt="" />
+                <img src={img2} alt="" />
                 <div className='workshop_name'>
                     Digital Signal Processing using Matlab
                 </div>
@@ -39,17 +48,15 @@ const Workshop=()=>{
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M21.9042 9.32677C21.9042 8.92707 21.5802 8.60306 21.1805 8.60306C20.7808 8.60306 20.4568 8.92707 20.4568 9.32677V20.4237H9.36C8.96031 20.4237 8.63629 20.7477 8.63629 21.1474C8.63629 21.5471 8.96031 21.8711 9.36 21.8711H20.4568V32.968C20.4568 33.3677 20.7808 33.6917 21.1805 33.6917C21.5802 33.6917 21.9042 33.3677 21.9042 32.968V21.8711H33.0012C33.4009 21.8711 33.7249 21.5471 33.7249 21.1474C33.7249 20.7477 33.4009 20.4237 33.0012 20.4237H21.9042V9.32677Z" fill="#9D9FA2"/>
                     </svg>
                 </button>
-                {isOpen &&
+            </div>
+            {isOpen &&
                     <div className='collapse-content'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, vel, iusto saepe beatae explicabo natus nisi voluptas, quibusdam commodi non assumenda consequuntur soluta sit id consectetur? Eaque ullam sed porro?
                     </div>
                 
                 }
-                
-                
-            </div>
             <div className='workshop'>
-                <img src="./3.png" alt="" />
+                <img src={img3} alt="" />
                 <div className='workshop_name'>
                     Quantum Signal Processing Worksop
                 </div>
@@ -59,8 +66,14 @@ const Workshop=()=>{
                 </svg>
                 </button>
             </div>
+            {isOpen &&
+                    <div className='collapse-content'>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, vel, iusto saepe beatae explicabo natus nisi voluptas, quibusdam commodi non assumenda consequuntur soluta sit id consectetur? Eaque ullam sed porro?
+                    </div>
+                
+                }
             <div className='workshop'>
-                <img src="/4.png" alt="" />
+                <img src={img4} alt="" />
                 <div className='workshop_name'>
                     Speech Recognition Workshop
                 </div>
@@ -70,8 +83,14 @@ const Workshop=()=>{
                     </svg>
                 </button>
             </div>
+            {isOpen &&
+                    <div className='collapse-content'>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, vel, iusto saepe beatae explicabo natus nisi voluptas, quibusdam commodi non assumenda consequuntur soluta sit id consectetur? Eaque ullam sed porro?
+                    </div>
+                
+                }
             <div className='workshop'>
-                <img src="./5.png" alt="" />
+                <img src={img5} alt="" />
                 <div className='workshop_name'>
                     The Blockchain and Signal Processing Workshop
                 </div>
@@ -81,6 +100,12 @@ const Workshop=()=>{
                     </svg>
                 </button>
             </div>
+            {isOpen &&
+                    <div className='collapse-content'>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, vel, iusto saepe beatae explicabo natus nisi voluptas, quibusdam commodi non assumenda consequuntur soluta sit id consectetur? Eaque ullam sed porro?
+                    </div>
+                
+                }
         
         </div>
     )

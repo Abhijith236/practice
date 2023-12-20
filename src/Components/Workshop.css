@@ -77,7 +77,10 @@ button{
 
   
 .collapse-content {
-    align-items: flex-start;
+    
+    position: relative;
+    height: 50px;
+    width: 100px;
     margin-top: 10px; /* Adjust the margin based on your design */
 }
 
