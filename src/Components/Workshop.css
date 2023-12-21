@@ -18,12 +18,6 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-
-   
-
-
-    
 }
 
 img{
@@ -38,7 +32,6 @@ img{
     align-items: center;
     font-family: 'Inter', sans-serif;
     color: #D9D9D9; 
-    font-family: Inter;
     font-size: 22.29px;
     font-style: normal;
     font-weight: 600; 
@@ -50,18 +43,20 @@ img{
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
+    padding: 10%;
     
 }
 
 
 .workshop{
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
-    height: 15vh;
+    height: 13vh;
     background-color: black;
     align-items: center;
     border-bottom: 1.013px solid var(--Black-700, #282828); 
+    
+   
 }
 
 
@@ -78,10 +73,10 @@ img{
   
 .collapse-content {
     color: white;
-    position: relative;
-    height: 50px;
-    width: 100px;
-    margin-top: 10px; /* Adjust the margin based on your design */
+    position: absolute;
+    height: auto;
+    width: 100%;
+    margin-top: 10%; /* Adjust the margin based on your design */
 }
 
 .knowmore{
@@ -92,5 +87,11 @@ img{
 }
   
 
+@media (max-width: 768px) {
 
-
+    .workshop{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}

@@ -40,7 +40,7 @@ const Workshop=()=>{
     },
     {
         img: img5,
-        name: 'The Blockchain and Signal ProcessingWorkshop',
+        name: 'The Blockchain and Signal Processing Workshop',
         content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit...',
     },
    
