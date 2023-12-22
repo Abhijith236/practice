@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Components/Navbar';
 import Workshop from './Components/Workshop';
+import Workshop1 from './Components/Workshop1';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Workshop/>
+    <Workshop1/>
   </React.StrictMode>
 );
 

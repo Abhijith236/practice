@@ -1,5 +1,6 @@
 import {React,useState} from 'react';
 import './Workshop.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import img1 from './imgs/1.png';
 import img2 from './imgs/2.png';
 import img3 from './imgs/3.png';
@@ -58,7 +59,7 @@ const Workshop=()=>{
         <div key={index} className='workshop'>
           <img src={workshop.img} alt='' />
           <div className='workshop_name'>{workshop.name}</div>
-          <button onClick={() => toggleCollapse(index) } className='collapse-button'>
+          <button onClick={() => toggleCollapse(index) } className='collapse-button' >
             {isOpen[index] ? (
               <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8379 11.5335C12.5553 11.2509 12.0971 11.2509 11.8144 11.5335C11.5318 11.8161 11.5318 12.2744 11.8144 12.557L19.6611 20.4037L11.8145 28.2503C11.5319 28.5329 11.5319 28.9912 11.8145 29.2738C12.0971 29.5564 12.5554 29.5564 12.838 29.2738L20.6846 21.4272L28.5313 29.2739C28.8139 29.5565 29.2721 29.5565 29.5548 29.2739C29.8374 28.9912 29.8374 28.533 29.5548 28.2504L21.7081 20.4037L29.5548 12.5569C29.8375 12.2743 29.8375 11.8161 29.5548 11.5335C29.2722 11.2508 28.814 11.2508 28.5314 11.5335L20.6846 19.3802L12.8379 11.5335Z" fill="#9D9FA2"/>
