@@ -56,6 +56,8 @@ img{
     align-items: center;
     border-bottom: 1.013px solid var(--Black-700, #282828); 
     
+    
+    
    
 }
 
@@ -72,18 +74,28 @@ img{
 
   
 .collapse-content {
+
     color: white;
     position: absolute;
     height: auto;
-    width: 100%;
-    margin-top: 10%; /* Adjust the margin based on your design */
+    width: 60vw;
+    margin-top: 10%; 
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    background-color: aliceblue;
+    
 }
+
+
 
 .knowmore{
     background-color: white;
     font-family: 'Inter', sans-serif;
     border-radius: 1.957rem;
-    font-weight: 600;
+    font-weight: 500;
+    width: 10rem;
+    height: 2rem;
 }
   
 
