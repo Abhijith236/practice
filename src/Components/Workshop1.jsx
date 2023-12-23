@@ -5,21 +5,27 @@ import img3 from './imgs/3.png';
 import img4 from './imgs/4.png';
 import img5 from './imgs/5.png';
 
+
 const Workshop1=()=>{
+    
     const Border = {
         borderBottom: '1.013px solid var(--Black-700, #282828)',
         
       };
-      
+    
+    const Text = {
+        color: '#8B8B8B',
+    }
 
-      const [isActive, setIsActive] = useState(false);
+    
+    const [isActive, setIsActive] = useState(false);
 
-     const handleClick = () => {
+    const handleClick = () => {
         setIsActive(!isActive);
         };
     return(
         <>
-            <div className='Workshop_container w-100 h-100 bg-black justify-content-center'>
+            <div className='Workshop_container w-100 h-100 bg-black '>
                 <div className='workshop_head d-flex align-item-center '>
                     <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M21.3433 43.8937L36.8819 28.3551L24.8115 28.3551L24.8115 24.5623L43.357 24.5623L43.357 43.1078H39.5642L39.5642 31.0374L24.0256 46.5761L21.3433 43.8937Z" fill="#33FFA9"/>
@@ -27,8 +33,8 @@ const Workshop1=()=>{
                     <div className='text-sm'>Workshop</div>
                 </div>
                 
-                <div className='workshop1 d-flex  m-5 align-items-center justify-content-between'>
-                    <img src={img1} alt="" />
+                <div className='workshop1 d-lg-flex  align-items-center justify-content-center m-5  p-2' >
+                    <img src={img1} alt="" className=''/>
                     <p className=''>Brainwave Robotics Workshop</p>
                     <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll1' onClick={handleClick}>
                         { isActive? 
@@ -44,15 +50,15 @@ const Workshop1=()=>{
                         }
                     </button>
                 </div>
-                <div className='content1 pb-3 d-flex flex-column  align-items-lg-start justify-content-center m-lg-5' id='coll1' style={Border}>
-                    <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
+                <div className='content1 card card-body bg-black' id='coll1' style={Border}>
+                    <p className='text-center' style={Text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
                     <button className='btn btn-light' type='button'>Know More</button>
                 </div>
                 
-                <div className='workshop2 d-flex m-5 align-items-center justify-content-between '>
+                <div className='workshop2 d-flex m-5 align-items-center justify-content-center p-2 '>
                     <img src={img2} alt="" />
-                    <p className=''>Digital Signal Processing using Matlab</p>
-                    <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll1' onClick={handleClick}>
+                    <p className='p-3'>Digital Signal Processing using Matlab</p>
+                    <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll2' onClick={handleClick}>
                         { isActive? 
                             (   <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8379 12.2955C12.5553 12.0129 12.0971 12.0129 11.8144 12.2955C11.5318 12.5782 11.5318 13.0364 11.8144 13.319L19.6611 21.1657L11.8145 29.0123C11.5319 29.2949 11.5319 29.7532 11.8145 30.0358C12.0971 30.3184 12.5554 30.3184 12.838 30.0358L20.6846 22.1892L28.5313 30.0359C28.8139 30.3185 29.2721 30.3185 29.5548 30.0359C29.8374 29.7532 29.8374 29.295 29.5548 29.0124L21.7081 21.1657L29.5548 13.319C29.8375 13.0363 29.8375 12.5781 29.5548 12.2955C29.2722 12.0128 28.814 12.0128 28.5314 12.2955L20.6846 20.1422L12.8379 12.2955Z" fill="#9D9FA2"/>
@@ -66,15 +72,15 @@ const Workshop1=()=>{
                         }
                     </button>
                 </div>
-                <div className='pb-3' id='coll2' style={Border} >
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
+                <div className=' content2 pb-3 ' id='coll2' style={Border} >
+                    <p style={Text} className='text-lg-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
                     <button className='btn btn-light' type='button'>Know More</button>
                 </div>
                 
                 <div className='workshop3 d-flex m-5 align-items-center  justify-content-sm-between'>
                     <img src={img3} alt="" />
-                    <p>Quantum Signal Processing Workshop</p>
-                    <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll1' onClick={handleClick}>
+                    <p className='p-3'>Quantum Signal Processing Workshop</p>
+                    <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll3' onClick={handleClick}>
                         { isActive? 
                             (   <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8379 12.2955C12.5553 12.0129 12.0971 12.0129 11.8144 12.2955C11.5318 12.5782 11.5318 13.0364 11.8144 13.319L19.6611 21.1657L11.8145 29.0123C11.5319 29.2949 11.5319 29.7532 11.8145 30.0358C12.0971 30.3184 12.5554 30.3184 12.838 30.0358L20.6846 22.1892L28.5313 30.0359C28.8139 30.3185 29.2721 30.3185 29.5548 30.0359C29.8374 29.7532 29.8374 29.295 29.5548 29.0124L21.7081 21.1657L29.5548 13.319C29.8375 13.0363 29.8375 12.5781 29.5548 12.2955C29.2722 12.0128 28.814 12.0128 28.5314 12.2955L20.6846 20.1422L12.8379 12.2955Z" fill="#9D9FA2"/>
@@ -89,14 +95,14 @@ const Workshop1=()=>{
                     </button>
                 </div>
                 <div className='content3 pb-3' id='coll3' style={Border}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
-                    <button className='btn' type='button'>Know More</button>
+                    <p style={Text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
+                    <button className='btn btn-light' type='button'>Know More</button>
                 </div>
                 
                 <div className='workshop4 d-flex m-5 align-items-center justify-content-between'>
                     <img src={img4} alt="" />
-                    <p>Speech Recognition Workshop</p>
-                    <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll1' onClick={handleClick}>
+                    <p className='p-3'>Speech Recognition Workshop</p>
+                    <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll4' onClick={handleClick}>
                         { isActive? 
                             (   <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8379 12.2955C12.5553 12.0129 12.0971 12.0129 11.8144 12.2955C11.5318 12.5782 11.5318 13.0364 11.8144 13.319L19.6611 21.1657L11.8145 29.0123C11.5319 29.2949 11.5319 29.7532 11.8145 30.0358C12.0971 30.3184 12.5554 30.3184 12.838 30.0358L20.6846 22.1892L28.5313 30.0359C28.8139 30.3185 29.2721 30.3185 29.5548 30.0359C29.8374 29.7532 29.8374 29.295 29.5548 29.0124L21.7081 21.1657L29.5548 13.319C29.8375 13.0363 29.8375 12.5781 29.5548 12.2955C29.2722 12.0128 28.814 12.0128 28.5314 12.2955L20.6846 20.1422L12.8379 12.2955Z" fill="#9D9FA2"/>
@@ -111,14 +117,14 @@ const Workshop1=()=>{
                     </button>
                 </div>
                 <div className='content4 pb-3' id='coll4' style={Border}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
+                    <p style={Text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
                     <button className='btn btn-light' type='button'>Know More</button>
                 </div>
                 
                 <div className='workshop5 d-flex m-5 align-items-center justify-content-between'>
                     <img src={img5} alt="" />
-                    <p>The Blockchain and Signal Processing Workshop</p>
-                    <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll1' onClick={handleClick}>
+                    <p className='p-3'>The Blockchain and Signal Processing Workshop</p>
+                    <button className={`btn ${isActive ? 'btn':'btn'}`} data-bs-toggle='collapse' type='button' data-bs-target='#coll5' onClick={handleClick}>
                         { isActive? 
                             (   <svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M12.8379 12.2955C12.5553 12.0129 12.0971 12.0129 11.8144 12.2955C11.5318 12.5782 11.5318 13.0364 11.8144 13.319L19.6611 21.1657L11.8145 29.0123C11.5319 29.2949 11.5319 29.7532 11.8145 30.0358C12.0971 30.3184 12.5554 30.3184 12.838 30.0358L20.6846 22.1892L28.5313 30.0359C28.8139 30.3185 29.2721 30.3185 29.5548 30.0359C29.8374 29.7532 29.8374 29.295 29.5548 29.0124L21.7081 21.1657L29.5548 13.319C29.8375 13.0363 29.8375 12.5781 29.5548 12.2955C29.2722 12.0128 28.814 12.0128 28.5314 12.2955L20.6846 20.1422L12.8379 12.2955Z" fill="#9D9FA2"/>
@@ -133,7 +139,7 @@ const Workshop1=()=>{
                     </button>
                 </div>
                 <div className='content5 pb-3 ' id='coll5' style={Border}>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
+                    <p style={Text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
                     <button className='btn btn-light' type='button'>Know More</button>
                 </div>
             </div>

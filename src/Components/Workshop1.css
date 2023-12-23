@@ -1,0 +1,12 @@
+.button{
+    background: url('./imgs/Add.svg');
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:none
+}
+
+.button:active:focus{
+    background: url('./imgs/Cross.svg');
+}
