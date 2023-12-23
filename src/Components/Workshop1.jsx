@@ -50,7 +50,7 @@ const Workshop1=()=>{
                         }
                     </button>
                 </div>
-                <div className='content1 card card-body bg-black' id='coll1' style={Border}>
+                <div className='content1 pb-3' id='coll1' style={Border}>
                     <p className='text-center' style={Text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt minima magni corrupti accusantium, quo natus deleniti laudantium. Debitis modi pariatur consequuntur dolorum deserunt nobis? Distinctio in fugiat libero obcaecati nemo!</p>
                     <button className='btn btn-light' type='button'>Know More</button>
                 </div>
