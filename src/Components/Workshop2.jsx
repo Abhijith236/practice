@@ -10,11 +10,11 @@ const Workshop2 = () => {
     return(
         <>
          <div className="container w-75 h-100 mt-5 bg-black ">
-            <div className='workshop_head d-flex align-item-center '>
+            <div className='workshop_head d-flex align-items-center'>
                 <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M21.3433 43.8937L36.8819 28.3551L24.8115 28.3551L24.8115 24.5623L43.357 24.5623L43.357 43.1078H39.5642L39.5642 31.0374L24.0256 46.5761L21.3433 43.8937Z" fill="#33FFA9"/>
                 </svg>
-                <div className='text-sm'>Workshop</div>
+                <div className='workshop text-light'>Workshop</div>
             </div>
             <div className="accordion" id='workshop'>
                 <div className="accordion-item">
