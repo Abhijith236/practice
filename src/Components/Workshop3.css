@@ -53,7 +53,7 @@
 }
 
 .crxnpls{
-    padding-left:15rem;
+    padding-left: 12rem;
 }
 
 .content{
@@ -109,6 +109,7 @@
     .title {
       padding: 1rem; 
       font-size: 14px;  
+      width: 30rem;
     }
     .workshop-img{
         max-width: 100px;
