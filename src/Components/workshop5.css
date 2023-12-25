@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 *{
@@ -31,9 +33,9 @@
 
 .items{
     background-color: black;
-    margin-bottom: 5px;
+    margin-bottom: -10px;
     padding: 10px;
-    width: 40rem;
+    width: 34rem;
     
     
 }
@@ -84,64 +86,50 @@
     max-height: 9999px;
     transition: all 0.5s cubic-bezier(1,0,1,0);
     border-bottom: 1.013px solid var(--Black-700, #282828); 
-    padding-left: 7rem;
+    padding-left: 2rem;
     font-size: 18.29px;
     margin-bottom: 2rem;
-    
 }
 
 .know-more{
     background-color: white;
     border-radius: 1rem;
     font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 9px;
+    margin-bottom: 14px;
     font-size: 15px;
+    color:black;
+    padding: 5px;
     border: 2px solid white;
-    color: black;
 }
 
-/* Add media query for mobile responsiveness */
 @media (max-width: 868px) {
-    .container {
-      margin: 0%;
+    
+    .container{
+        margin: 20%;
+        
     }
-  
-    .workshop-head {
-      font-size: 28px;
-    }
-  
-    .items {
-      width: 84vw;
-    }
-  
+    
     .title {
-      padding: 1rem;
-      font-size: 14px;
-      width: 80vw;
+      padding: 1rem; 
+      font-size: 14px;  
+      width: 23rem;
     }
-  
-    .workshop-img {
-      max-width: 50px;
-      margin: 5px;
+    .workshop-img{
+        max-width: 100px;
+        margin: 5px;
     }
-  
-    .content.show {
-      font-size: 18px;
-      overflow: hidden;
-      margin-top: 1rem;
-      margin-left: -6rem;
+    .content.show{
+        font-size: 10px;
+        overflow: hidden;
+        margin-top: 1rem;
     }
-  
-    .crxnpls {
-      padding-left: 0.5rem;
+    .crxnpls{
+        padding-left: 2.5rem;
     }
-  
-    .know-more {
-      margin-top: 9px;
-      margin-bottom: 14px;
-      font-size: 15px;
-      color: black;
-    }
+    
+    
+    
   }
-  
+
+
